@@ -1,0 +1,10 @@
+databaseConfiguration:
+    driverClass: org.hsqldb.jdbc.JDBCDriver
+    user: sa
+    password: 
+    url: jdbc:hsqldb:mem:usersDB
+    properties:
+        # javax.persistence.schema-generation.database.action: drop-and-create
+        hibernate.hbm2ddl.auto: create-drop
+        hibernate.hbm2ddl.import_files: /META-INF/sql/dataset.sql
+        hibernate.show_sql: true
